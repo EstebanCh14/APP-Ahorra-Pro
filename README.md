@@ -1,11 +1,11 @@
-# 💰 AhorraPro 2.0 — Arquitectura en Microservicios
+# AhorraPro 2.0 — Arquitectura en Microservicios
 
 Aplicación de finanzas personales desarrollada en Python, que permite gestionar ingresos, gastos y analizar el comportamiento financiero mediante predicciones inteligentes.  
 Construida bajo una arquitectura modular y orientada a microservicios, integra los patrones de diseño Adapter, Factory Method y Observer, garantizando un sistema flexible, mantenible y escalable.
 
 ---
 
-## 🏗️ Estructura del Proyecto
+## Estructura del Proyecto
 
 AhorraPro/
 │
@@ -47,28 +47,28 @@ AhorraPro/
 
 ---
 
-## 🧩 Patrones de Diseño Implementados
+## Patrones de Diseño Implementados
 
-### 🧱 **Adapter Pattern**
+### **Adapter Pattern**
 Ubicación: `servicio_prediccion/SklearnAdapter.py`  
 Permite adaptar modelos de `scikit-learn` al formato interno de AhorraPro, manteniendo la independencia entre el motor de predicción y la lógica del sistema.
 
 ---
 
-### 🏭 **Factory Method**
+### **Factory Method**
 Ubicación: `servicio_transaccion/TransactionFactory.py`  
 Centraliza la creación de objetos `Transaccion` (ingreso/gasto) sin acoplar la lógica de instanciación a la capa de presentación.
 
 ---
 
-### 👁️ **Observer Pattern**
+### **Observer Pattern**
 Ubicación: `gateway/`  
 Permite que la interfaz gráfica se suscriba a los cambios de datos en el sistema.  
 Cuando una transacción se registra o modifica, la vista se actualiza automáticamente.
 
 ---
 
-## ⚙️ Requisitos del Sistema
+## Requisitos del Sistema
 
 - **Python 3.10 o superior**
 - **Tkinter** (incluido por defecto en Python)
@@ -78,10 +78,10 @@ Cuando una transacción se registra o modifica, la vista se actualiza automátic
   pandas
   matplotlib
   scikit-learn
-🧩 Instalación rápida de dependencias
+Instalación rápida de dependencias
 python -m pip install -r requirements.txt
 
-🚀 Ejecución del Proyecto
+Ejecución del Proyecto
 Desde la carpeta raíz del proyecto:
 
 python -m ui.AppGraficaFinanzas.main
@@ -90,26 +90,26 @@ O si usas la versión de Python instalada desde Microsoft Store:
 
 py -m ui.AppGraficaFinanzas.main
 
-📁 Ejemplo de ruta en Windows:
+Ejemplo de ruta en Windows:
 C:\Users\<usuario>\OneDrive\Desktop\AhorraPro\AhorraPro
 
-🧠 Funcionalidades Principales
-✅ Registro de ingresos y gastos
-✅ Resumen financiero por categorías
-✅ Cálculo automático del saldo total
-✅ Visualización gráfica de datos con Matplotlib
-✅ Predicción de gastos mediante Regresión Lineal
-✅ Arquitectura basada en microservicios
-✅ Interfaz gráfica interactiva y responsiva (Tkinter)
+Funcionalidades Principales
+- Registro de ingresos y gastos
+- Resumen financiero por categorías
+- Cálculo automático del saldo total
+- Visualización gráfica de datos con Matplotlib
+- Predicción de gastos mediante Regresión Lineal
+- Arquitectura basada en microservicios
+- Interfaz gráfica interactiva y responsiva (Tkinter)
 
-👥 Equipo de Desarrollo
+Equipo de Desarrollo
 Integrante	Rol
 Camila Vélez Posada	Desarrolladora principal / Arquitectura de microservicios
 Juan Esteban Chica Masmela	QA y pruebas funcionales / Documentación técnica
 José Daniel Ramírez Urrego	Soporte técnico / Integración de servicios
 Harly Córdoba Cano	Análisis de datos / Optimización del módulo predictivo
 
-🧩 Detalle Técnico
+Detalle Técnico
 Componente	Tecnología
 Frontend (UI)	Tkinter (Python GUI)
 Backend	Microservicios independientes (Gateway + Servicios)
@@ -118,9 +118,9 @@ Reportes	Generados en tiempo real (Servicio de Reporte)
 Persistencia	En memoria (listas Python) — extensible a SQL o NoSQL
 Arquitectura	Microservicios + Patrones de Diseño Clásicos
 
-🧱 Inspiración Arquitectónica
+Inspiración Arquitectónica
 Este proyecto evoluciona desde una versión monolítica anterior, refactorizada para aplicar principios SOLID y una arquitectura basada en microservicios, buscando mejorar la separación de responsabilidades, escalabilidad y mantenibilidad del código.
 
-🌟 Licencia
+Licencia
 Proyecto académico — uso libre con fines educativos.
 Desarrollado con ❤️ por nuestro equipo de trabajo.
